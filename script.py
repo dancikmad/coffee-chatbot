@@ -1,6 +1,10 @@
 def coffee_bot():
-    pass
-
+    print("Welcome to the cafe!")
+    size = get_size()
+    drink_type = get_drink_type()
+    print(f"Alright, that's a {size} {drink_type}")
+    name = input("Can I get your name please? ")
+    print(f"Thanks, {name}! Your drink will be ready shortly!")
 
 # Functions
 def print_message():
