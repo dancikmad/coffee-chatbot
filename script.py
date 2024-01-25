@@ -40,7 +40,7 @@ def get_size():
 
 def get_drink_type():
     """Prompts the user to enter the coffee type and returns the selected value."""
-    res = (
+    res = input(
         "What type of drink can I get for you? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n"
     ).lower()
 
