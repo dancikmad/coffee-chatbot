@@ -6,6 +6,7 @@ def coffee_bot():
     name = input("Can I get your name please? ")
     print(f"Thanks, {name}! Your drink will be ready shortly!")
 
+
 # Functions
 def print_message():
     """A function that is executed when wrong option is selected and prints a
@@ -36,6 +37,7 @@ def get_size():
 
     return size
 
+
 def get_drink_type():
     """Prompts the user to enter the coffee type and returns the selected value."""
     res = (
@@ -54,7 +56,7 @@ def get_drink_type():
         print_message()
         # Utilizing recursion to persistently prompt until correct option selected
         drink_type = get_drink_type()
-        
+
     return drink_type
 
 
@@ -74,6 +76,9 @@ def order_latte():
         print_message()
         # Utilizing recursion to persistently prompt until correct option selected
         latte_type = order_latte()
-        
+
     return latte_type
 
+
+# Call coffee_bot()
+coffee_bot()
