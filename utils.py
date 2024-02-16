@@ -29,7 +29,7 @@ def get_drink_type():
     coffee_menu += "\n[c] Latte"
     coffee_menu += "\n[d] Flat White"
     coffee_menu += "\n[e] Americano"
-    coffee_menu += "\n[f] Espresso \n:"
+    coffee_menu += "\n[f] Espresso \n: "
     
     res = input(coffee_menu).lower()
     if res == "a":
@@ -68,13 +68,15 @@ def order_latte():
 
 
 def order_mocha():
+    mocha_menu = "Would you like to try our limited-edition white mocha? "
+    mocha_menu += "\n[a] Sure!"
+    mocha_menu += "\n[b] Maybe next time! \n: "
+    
     while True:
-        res = input(
-            "Would you like totry our limited-edition peppermint mocha? \n[a] Sure! \n[b] Maybe next time!"
-        ).lower()
+        res = input(mocha_menu).lower()
 
         if res == "a":
-            return "peppermint mocha"
+            return "white mocha"
         elif res == "b":
             return "mocha"
         print_message()
