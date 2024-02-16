@@ -23,15 +23,27 @@ def get_size():
 
 
 def get_drink_type():
-    res = input(
-        "What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n"
-    ).lower()
+    coffee_menu = "What type of drink would you like: "
+    coffee_menu += "\n[a] Brewed Coffee"
+    coffee_menu += "\n[b] Mocha"
+    coffee_menu += "\n[c] Latte"
+    coffee_menu += "\n[d] Flat White"
+    coffee_menu += "\n[e] Americano"
+    coffee_menu += "\n[f] Espresso \n:"
+    
+    res = input(coffee_menu).lower()
     if res == "a":
         return "brewed coffee"
     elif res == "b":
         return order_mocha()
     elif res == "c":
         return order_latte()
+    elif res == "d":
+        return "flat white"
+    elif res == "e":
+        return "americano"
+    elif res == "f":
+        return "espresso"
     else:
         print_message()
 
